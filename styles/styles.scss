@@ -1,9 +1,11 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 body{
-    position: fixed;
+    // position: fixed;
+    overflow: hidden;
 }
 
 .key {
@@ -32,7 +34,7 @@ body{
 .intro {
     display: grid;
     align-items: center;
-    width: 200vh;
+    width: 100%;
     height: 100vh;
     background-color: powderblue;
 }
@@ -78,6 +80,7 @@ body{
 .wellcome {
     display: grid;
     align-items: center;
+    width: 100%;
     height: 100vh;
     background-color: palegreen;
 }
