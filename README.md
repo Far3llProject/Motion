@@ -1,2 +1,3 @@
 # Motion
- um site com emoções
+ um site com emoções // em desenvolvimento
+ 
