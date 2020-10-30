@@ -9,10 +9,9 @@
 </head>
 <body>
   <!-- CHAVE -->
-  <div class="intro">
-
+  <div id="key" class="intro">
     <div class="title container">
-      <p>You are recived a key of my heart!</p>
+      <p>You are recived <br> key of Kingdon</p>
     </div>
     <div class="key container">
       <img src="assets/chave_heart.png">
@@ -26,8 +25,55 @@
     </div>
   </div>
   <!-- Principal -->
-  <div class="container wellcome">
-    <!-- <h2 id="second"> </h2> -->
+  <div id="second" class="wellcome container aling">
+    <div class="container">
+      <div class="aling">
+        <div id="dia" class="time"></div>    
+        <div class="text">days</div>
+      </div>
+      <div class="aling">
+        <div id="hora"class="time"></div>
+        <div class="text">hour</div>
+      </div>
+      <div class="aling">
+        <div id="minuto"class="time"></div>
+        <div class="text">min</div>
+      </div>
+      <div class="aling">
+        <div id="segundo"class="time"></div>
+        <div class="text">sec</div>
+      </div>
+    </div>
+    <div class="container text aling">
+      <div>O conteúdo desse site está sendo desenvolvido!!!</div>
+      <div class="text">em breve novidades da primeira parte.</div>
+      <div class="text">by Rafael Martins</div>
+    </div>
+    <button class="button" ><a href="#key">sair</a></button>
   </div>
+  <script>
+    let Day, Hours, Minutes, Second
+    let target_date = new Date("december 25, 2020").getTime()
+
+    setInterval(() => {
+      let current_date = new Date().getTime()
+      let seconds = (target_date - current_date) / 1000
+
+      Day = parseInt(seconds / 86400)
+      seconds = seconds % 86400
+
+      Hours = parseInt(seconds / 3600)
+      seconds = seconds % 3600
+
+      Minutes = parseInt(seconds / 60)
+      Second = parseInt(seconds % 60)
+
+      document.getElementById("dia").innerHTML = Day 
+      document.getElementById("hora").innerHTML = Hours
+      document.getElementById("minuto").innerHTML = Minutes
+      document.getElementById("segundo").innerHTML = Second
+
+    }, 1000);
+  </script>
 </body>
 </html>
