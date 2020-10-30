@@ -7,31 +7,45 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .key {
   position: relative;
   -webkit-animation: animate 1s ease-in-out infinite;
           animation: animate 1s ease-in-out infinite;
 }
 
+.key__img {
+  width: 190px;
+}
+
+.key__time {
+  width: 50px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 @-webkit-keyframes animate {
   0%, 100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
 }
 
 @keyframes animate {
   0%, 100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
 }
 
@@ -55,14 +69,6 @@ body {
   background-color: powderblue;
 }
 
-.title {
-  font-family: 'Press Start 2P';
-  font-size: 50px;
-  margin-bottom: 40px;
-  color: purple;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-}
-
 .field {
   padding-left: 10px;
   padding-right: 10px;
@@ -84,9 +90,18 @@ body {
   padding: 5px 10px 5px 10px;
   border-radius: 5px;
   margin-top: 10px;
-  margin-left: 10px;
   -webkit-box-shadow: 2px 2px;
           box-shadow: 2px 2px;
+}
+
+.button__sair {
+  font-family: 'Press Start 2P';
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  -webkit-box-shadow: 2px 2px;
+          box-shadow: 2px 2px;
+  margin-right: 15px;
 }
 
 .button:focus {
@@ -128,7 +143,6 @@ body {
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 10px;
 }
 
 .time {
@@ -139,8 +153,20 @@ body {
 }
 
 .text {
+  text-align: center;
   text-shadow: 1px 1px 10px #f085c3;
   padding-top: 10px;
+  color: deeppink;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.text__title {
+  text-align: center;
+  font-family: 'Press Start 2P';
+  text-shadow: 1px 1px 10px #f085c3;
+  font-size: 20px;
+  margin-bottom: 40px;
   color: deeppink;
 }
 /*# sourceMappingURL=styles.css.map */
