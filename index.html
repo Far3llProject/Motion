@@ -5,27 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>Motion</title>
 </head>
 <body>
   <!-- CHAVE -->
-  <div id="key" class="intro">
-    <div class="title container">
-      <p>You are recived <br> key of Kingdon</p>
+  <div id="key" class="wellcome container aling">
+    <div class="aling text__title">
+      <h3>Motion</h3>
+      <p>In this site you recive keys to unlock pages!</p>
     </div>
-    <div class="key container">
-      <img src="assets/chave_heart.png">
+    <div class="key aling">
+      <img class="key__img" src="assets/chave_heart.png">
     </div>
-    <div class="container">
-      <input class="field" type="field" placeholder="Insert key..."> 
-      <button class="button" ><a href="#second">ok</a></button>
+    <div class="aling">
+      <input id="pass" class="field" type="field" placeholder="Insert key..."> 
+      <button class="button" onclick="getPass()">ok</button>
     </div>
-    <div class="container">
+    <div class="text">
       <p>by Rafael Martins</p>
     </div>
   </div>
   <!-- Principal -->
-  <div id="second" class="wellcome container aling">
+  <div id="tempo" class="wellcome container aling">
     <div class="container">
       <div class="aling">
         <div id="dia" class="time"></div>    
@@ -47,9 +48,30 @@
     <div class="container text aling">
       <div>O conteúdo desse site está sendo desenvolvido!!!</div>
       <div class="text">em breve novidades da primeira parte.</div>
+      <div class="key">
+        <img class="key__img" src="/assets/trabalhador.png">
+      </div>
       <div class="text">by Rafael Martins</div>
     </div>
     <button class="button" ><a href="#key">sair</a></button>
+  </div>
+  <div id="amor" class="wellcome container aling">
+    <div class="container text aling">
+      <p>Oi minha vida, só você pra me deixar bobinho e apaixonado!</p>
+      <p class="text">eu faço coisas incríveis quando estou assim, me alegro em cada sorriso seu!</p>
+      <p class="text">por isso eu sempre vou fazer de tudo pra te deixar sempre sorrindo!!!</p>
+      <div class="key">
+        <img class="key__img" src="/assets/lua-de-mel.png">
+      </div>
+      <p>você ganhou a key <strong>"tempo"</strong> </p>
+      <div>
+        <img class="key__time" src="/assets/chave_tempo.png">
+      </div>
+      <div class="text">by Rafael Martins</div>
+    </div>
+    <div class="">
+      <button class="button__sair" ><a href="#key">sair</a></button>
+    </div>
   </div>
   <script>
     let Day, Hours, Minutes, Second
@@ -73,7 +95,18 @@
       document.getElementById("minuto").innerHTML = Minutes
       document.getElementById("segundo").innerHTML = Second
 
-    }, 1000);
+    }, 1000)
+    
+    function getPass () {
+      let password = document.getElementById("pass").value
+      if(password === "amor"){
+        document.getElementById('amor').scrollIntoView();
+      }else if (password === "tempo"){
+        document.getElementById('tempo').scrollIntoView();
+      }else {
+        alert("Essa chave não existe!")
+      }
+    }
   </script>
 </body>
 </html>
