@@ -8,7 +8,7 @@ button.onclick = function() {
     
     if (count >= 4){
        document.getElementById("bruxa").innerHTML = talk[4]
-       document.getElementById("key_witch").style.display = "grid"
+       document.getElementById("key_witch").style.display = "initial"
     } else {
         document.getElementById("bruxa").innerHTML = talk[count]
     }
@@ -18,7 +18,7 @@ button.onclick = function() {
     if (key === "neko") {
         count_2 += 1
         document.getElementById("bruxa").innerHTML = talk_2[count_2]
-        document.getElementById("neko").style.display = "grid"
+        document.getElementById("neko").style.display = "initial"
         if (count_2 > 4){
             document.getElementById("bruxa").innerHTML = talk_2[5]
             document.getElementById("neko").style.display = "none"

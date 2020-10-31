@@ -7,6 +7,19 @@ body {
   overflow: hidden;
 }
 
+.container {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #1f161e;
+}
+
 a {
   text-decoration: none;
 }
@@ -18,65 +31,14 @@ a {
 }
 
 .key__img {
-  width: 190px;
+  margin-top: 10px;
+  width: 100px;
 }
 
 .key__time {
   width: 50px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-}
-
-.key__bat {
-  width: 50px;
-  -webkit-animation: bat 30s ease-in-out infinite;
-          animation: bat 30s ease-in-out infinite;
-}
-
-@-webkit-keyframes bat {
-  0%, 100% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-  20% {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
-  }
-  25% {
-    -webkit-transform: translateX(-350px);
-            transform: translateX(-350px);
-  }
-  40% {
-    -webkit-transform: scale(-1);
-            transform: scale(-1);
-  }
-  10% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-  }
-}
-
-@keyframes bat {
-  0%, 100% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-  20% {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
-  }
-  25% {
-    -webkit-transform: translateX(-350px);
-            transform: translateX(-350px);
-  }
-  40% {
-    -webkit-transform: scale(-1);
-            transform: scale(-1);
-  }
-  10% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-  }
 }
 
 @-webkit-keyframes animate {
@@ -101,34 +63,14 @@ a {
   }
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.intro {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: powderblue;
-}
-
 .field {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 18px;
-  width: 300px;
+  width: 200px;
   height: 40px;
   border-radius: 0.4rem;
-  margin-top: 10px;
+  margin: 10px 0 5px 0;
   -webkit-box-shadow: 2px 2px;
           box-shadow: 2px 2px;
 }
@@ -146,30 +88,8 @@ a {
           box-shadow: 2px 2px;
 }
 
-.button__sair {
-  font-family: 'Press Start 2P';
-  padding: 5px 10px 5px 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  -webkit-box-shadow: 2px 2px;
-          box-shadow: 2px 2px;
-  margin-right: 15px;
-}
-
 .button:focus {
   outline: none;
-}
-
-.wellcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #1f161e;
 }
 
 .column {
@@ -192,12 +112,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-shadow: 1px 1px 10px #f085c3;
   font-size: 25px;
   font-family: 'Press Start 2P';
@@ -211,19 +134,22 @@ a {
   color: deeppink;
   font-size: 10px;
   line-height: 15px;
+  margin: 0 10px 0 10px;
 }
 
 .text__title {
   text-align: center;
   font-family: 'Press Start 2P';
   text-shadow: 1px 1px 10px #f085c3;
-  font-size: 20px;
+  font-size: 10px;
   margin-bottom: 40px;
+  margin: 0 10px 0 10px;
   color: deeppink;
+  line-height: 15px;
 }
 
 .talk {
-  min-width: 300px;
+  min-width: 100px;
   border-radius: 10px;
   padding: 10px;
   border: 2px;
