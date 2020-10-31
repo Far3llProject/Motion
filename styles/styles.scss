@@ -1,23 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-
-
-body{
+body {
     // position: fixed;
     overflow: hidden;
-
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 .key {
    position: relative; 
-   animation: animate 1s ease-in-out infinite;;
+   animation: animate 1s ease-in-out infinite;
 }
 
 .key {
@@ -27,6 +24,34 @@ a{
     &__time {
         width: 50px;
         transform: rotate(90deg);
+    }
+    &__bat{
+        width: 50px;
+        animation: bat 30s ease-in-out infinite;
+    }
+}
+
+@keyframes bat {
+    0%,100%
+    {
+        transform: translateX(100px);  
+    }
+    20%
+    {
+        transform: translateX(-300px);
+    }
+    25%
+    {
+        transform: translateX(-350px);
+    }
+    40%
+    {
+        transform: scale(-1);
+    }
+    10%
+    {
+        transform: translateX(-200px);
+        
     }
 }
 
@@ -42,8 +67,6 @@ a{
     }
 }
 
-
-
 .container {
     display: flex;
     justify-content: center;
@@ -56,8 +79,6 @@ a{
     height: 100vh;
     background-color: powderblue;
 }
-
-
 
 .field {
     padding-left: 10px;
@@ -142,6 +163,31 @@ a{
         margin-bottom: 40px;
         color: deeppink;
     }
+}
+
+.talk{
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px;
+    border-style: solid;
+}
+
+#key_witch {
+    display: none;
+}
+
+#neko {
+    display: none;
+}
+
+.controler {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 32%;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 600px) {

@@ -8,6 +8,11 @@
   <title>Motion</title>
 </head>
 <body>
+  <audio id="demo" src="/assets/hallow.mp3" preload="auto" loop autoplay ></audio>
+  <div class="controler" >
+    <button class="button" onclick="document.getElementById('demo').play()">Play</button>
+    <button class="button" onclick="document.getElementById('demo').pause()">Pause</button>
+  </div> 
   <!-- CHAVE -->
   <div id="key" class="wellcome container aling">
     <div class="aling text__title">
@@ -19,7 +24,7 @@
     </div>
     <div class="aling">
       <input id="pass" class="field" type="field" placeholder="Insert key..."> 
-      <button class="button" onclick="getPass()">ok</button>
+      <button type="submit" class="button" onclick="getPass()">ok</button>
     </div>
     <div class="text">
       <p>by Rafael Martins</p>
@@ -73,6 +78,29 @@
       <button class="button__sair" ><a href="#key">sair</a></button>
     </div>
   </div>
+  <div id="Salen" class="wellcome container aling">
+    <div class="container text aling">
+      <!-- <div>
+        <img class="key__bat" src="assets/bat.gif">
+      </div> -->
+      <div class="container" >
+        <img class="key__img" src="assets/bruxa.png">
+        <img id="neko" class="key__img key" src="assets/neko.png">
+      </div>
+      <div class="talk">
+        <p id="bruxa">olá docinho...</p>
+      </div>
+      <div id="key_witch">
+        <input id="poket" class="field" type="field" placeholder="bruxa"> 
+        <p>delvolver o gato</p>
+      </div>
+      <div>
+        <button id="bruxa_talk" class="button" type="button">continuar</button>
+        <button class="button" ><a href="#key">sair</a></button>
+      </div>
+    </div>
+  </div>
+
   <script>
     let Day, Hours, Minutes, Second
     let target_date = new Date("december 25, 2020").getTime()
@@ -103,10 +131,15 @@
         document.getElementById('amor').scrollIntoView();
       }else if (password === "Tempo"){
         document.getElementById('tempo').scrollIntoView();
+      }else if (password === "chat"){
+        document.getElementById('chat').scrollIntoView();
+      }else if (password === "Salen"){
+        document.getElementById('Salen').scrollIntoView();
       }else {
         alert("Essa chave não existe!")
       }
     }
   </script>
+  <script src="./js/counter.js"></script>
 </body>
 </html>
