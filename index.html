@@ -127,12 +127,16 @@
     function getPass () {
       let password = document.getElementById("pass").value
       if(password === "Amor"){
+        document.getElementById("amor").style.display = "flex"
         document.getElementById('amor').scrollIntoView();
       }else if (password === "Tempo"){
+        document.getElementById("tempo").style.display = "flex"
         document.getElementById('tempo').scrollIntoView();
       }else if (password === "chat"){
+        document.getElementById("chat").style.display = "flex"
         document.getElementById('chat').scrollIntoView();
       }else if (password === "Salen"){
+        document.getElementById("Salen").style.display = "flex"
         document.getElementById('Salen').scrollIntoView();
       }else {
         alert("Essa chave não existe!")
