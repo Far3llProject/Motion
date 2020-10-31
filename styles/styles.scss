@@ -8,10 +8,21 @@ body {
     overflow: hidden;
 }
 
+.container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 22, 30);
+}
+
 a {
     text-decoration: none;
 }
 
+//animação
 .key {
    position: relative; 
    animation: animate 1s ease-in-out infinite;
@@ -19,39 +30,12 @@ a {
 
 .key {
     &__img{
-        width: 190px;
+        margin-top: 10px;
+        width: 100px;
     }
     &__time {
         width: 50px;
         transform: rotate(90deg);
-    }
-    &__bat{
-        width: 50px;
-        animation: bat 30s ease-in-out infinite;
-    }
-}
-
-@keyframes bat {
-    0%,100%
-    {
-        transform: translateX(100px);  
-    }
-    20%
-    {
-        transform: translateX(-300px);
-    }
-    25%
-    {
-        transform: translateX(-350px);
-    }
-    40%
-    {
-        transform: scale(-1);
-    }
-    10%
-    {
-        transform: translateX(-200px);
-        
     }
 }
 
@@ -67,27 +51,14 @@ a {
     }
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.intro {
-    display: grid;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: powderblue;
-}
-
 .field {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 18px;
-    width: 300px;
+    width: 200px;
     height: 40px;
     border-radius: 0.4rem;
-    margin-top: 10px;
+    margin: 10px 0 5px 0;
     box-shadow: 2px 2px;
 }
 
@@ -101,47 +72,27 @@ a {
     border-radius: 5px;
     margin-top: 10px;
     box-shadow: 2px 2px;
-    &__sair{
-        font-family: 'Press Start 2P';
-        padding: 5px 10px 5px 10px;
-        border-radius: 5px;
-        margin-top: 10px;
-        box-shadow: 2px 2px;
-        margin-right: 15px;
-    }
 }
 
 .button:focus {
     outline: none;
 }
 
-// Principal
-.wellcome {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(31, 22, 30);
-    
-}
-
 .column {
     flex-direction: column;
 }
 
-// regressive 
 .aling {
     font-family: 'Press Start 2P';
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .time {
+    display: flex;
+    justify-content: center;
     text-shadow: 1px 1px 10px rgb(240, 133, 195);
     font-size: 25px;
     font-family: 'Press Start 2P';
@@ -155,18 +106,21 @@ a {
     color: deeppink;
     font-size: 10px;
     line-height: 15px;
+    margin: 0 10px 0 10px;
     &__title {
         text-align: center;
         font-family: 'Press Start 2P';
         text-shadow: 1px 1px 10px rgb(240, 133, 195);
-        font-size: 20px;
+        font-size: 10px;
         margin-bottom: 40px;
+        margin: 0 10px 0 10px;
         color: deeppink;
+        line-height: 15px;
     }
 }
 
 .talk{
-    min-width: 300px;
+    min-width: 100px;
     border-radius: 10px;
     padding: 10px;
     border: 2px;

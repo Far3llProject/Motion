@@ -8,13 +8,13 @@
   <title>Motion</title>
 </head>
 <body>
-  <audio id="demo" src="assets/hallow.mp3" preload="auto" loop autoplay ></audio>
+  <!-- <audio id="demo" src="assets/hallow.mp3" preload="auto" loop></audio>
   <div class="controler" >
     <button class="button" onclick="document.getElementById('demo').play()">Play</button>
     <button class="button" onclick="document.getElementById('demo').pause()">Pause</button>
-  </div> 
+  </div>  -->
   <!-- CHAVE -->
-  <div id="key" class="wellcome container aling">
+  <div id="key" class="container aling">
     <div class="aling text__title">
       <h3>Motion</h3>
       <p>In this site you recive keys to unlock pages!</p>
@@ -30,9 +30,10 @@
       <p>by Rafael Martins</p>
     </div>
   </div>
+
   <!-- Principal -->
-  <div id="tempo" class="wellcome container aling">
-    <div class="container">
+  <div id="tempo" class="container aling">
+    <div class="time">
       <div class="aling">
         <div id="dia" class="time"></div>    
         <div class="text">days</div>
@@ -50,40 +51,37 @@
         <div class="text">sec</div>
       </div>
     </div>
-    <div class="container text aling">
+    <div class="text">
       <div>O conteúdo desse site está sendo desenvolvido!!!</div>
-      <div class="text">em breve novidades da primeira parte.</div>
-      <div class="key">
-        <img class="key__img" src="assets/trabalhador.png">
-      </div>
-      <div class="text">by Rafael Martins</div>
-    </div>
+          <div class="text">em breve novidades da primeira parte.</div>
+          <div class="key">
+            <img class="key__img" src="assets/trabalhador.png">
+          </div>
+        </div>
     <button class="button" ><a href="#key">sair</a></button>
   </div>
-  <div id="amor" class="wellcome container aling">
-    <div class="container text aling">
+
+  <!-- Amor -->
+  <div id="amor" class="container aling">
+    <div class=" text aling">
       <p>Oi minha vida, só você pra me deixar bobinho e apaixonado!</p>
-      <p class="text">eu faço coisas incríveis quando estou assim, me alegro em cada sorriso seu!</p>
-      <p class="text">por isso eu sempre vou fazer de tudo pra te deixar sempre sorrindo!!!</p>
+      <p>eu faço coisas incríveis quando estou assim, me alegro em cada sorriso seu!</p>
+      <p>por isso eu sempre vou fazer de tudo pra te deixar sempre sorrindo!!!</p>
       <div class="key">
         <img class="key__img" src="assets/lua-de-mel.png">
       </div>
-      <p>você ganhou a key <strong>"tempo"</strong> </p>
+      <p class="talk" >[você ganhou a key <strong>"tempo"</strong>]</p>
       <div>
         <img class="key__time" src="assets/chave_tempo.png">
       </div>
-      <div class="text">by Rafael Martins</div>
     </div>
-    <div class="">
-      <button class="button__sair" ><a href="#key">sair</a></button>
-    </div>
+      <button class="button" ><a href="#key">sair</a></button>
   </div>
-  <div id="Salen" class="wellcome container aling">
-    <div class="container text aling">
-      <!-- <div>
-        <img class="key__bat" src="assets/bat.gif">
-      </div> -->
-      <div class="container" >
+
+  <!-- bruxa -->
+  <div id="Salen" class="container">
+    <div class="container aling text">
+      <div>
         <img class="key__img" src="assets/bruxa.png">
         <img id="neko" class="key__img key" src="assets/neko.png">
       </div>
@@ -91,12 +89,13 @@
         <p id="bruxa">olá docinho...</p>
       </div>
       <div id="key_witch">
-        <input id="poket" class="field" type="field" placeholder="bruxa"> 
-        <p>delvolver o gato</p>
+        <input id="poket" class="field" type="field" placeholder="Qual o nome do gato?"> 
+        <p>Se vc encontrar o gato ele dirá seu nome!</p>
+        <p>Escute com atenção!!!</p>
       </div>
       <div>
         <button id="bruxa_talk" class="button" type="button">continuar</button>
-        <button class="button" ><a href="#key">sair</a></button>
+        <button class="button"><a href="#key">sair</a></button>
       </div>
     </div>
   </div>
