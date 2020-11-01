@@ -10,7 +10,6 @@ button.onclick =  () => {
     }else {
         document.getElementById("menu_drop").classList.remove("menu__dropdown")
         document.getElementById("menu_drop").classList.add("menu__out")
-        // document.getElementById("menu_drop").style.display = "none"
         setTimeout(() => ( document.getElementById("menu_drop").style.display = "none"),500)
         show = !show
     }

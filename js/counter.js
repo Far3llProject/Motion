@@ -27,9 +27,6 @@ button.onclick = function() {
             document.getElementById("key_witch").style.display = "none"
             bag("gato")
             document.getElementById("bruxa_talk").style.display = "none"
-            // if(slot.indexOf("gato", 0)) {
-            // }
-            // document.getElementById("neko").classList.add("key__neko")
         }
     }
 }
