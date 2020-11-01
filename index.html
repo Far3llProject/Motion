@@ -13,6 +13,20 @@
     <button class="button" onclick="document.getElementById('demo').play()">Play</button>
     <button class="button" onclick="document.getElementById('demo').pause()">Pause</button>
   </div>  -->
+  <!-- Menu -->
+  <div id="menu" class="menu">
+    <button class="menu__button">
+      <img src="/assets/menu.png" alt="menu">
+    </button>
+
+    <div id="menu_drop">
+      <nav class="aling talk menu__drop">
+        <div><a class="text" href="#bag" onclick="">Inventário</a></div>
+        <div><a class="text" href="">Config</a></div>
+      </nav>
+    </div>
+  </div>
+
   <!-- CHAVE -->
   <div id="key" class="container aling">
     <div class="aling text__title">
@@ -24,6 +38,7 @@
     </div>
     <div class="aling">
       <input id="pass" class="field" type="field" placeholder="Insert key..."> 
+      <p class="text">use chaves para entrar em outras salas</p>
       <button type="submit" class="button" onclick="getPass()">ok</button>
     </div>
     <div class="text">
@@ -100,6 +115,24 @@
     </div>
   </div>
 
+   <!-- inventário -->
+   <div id="bag" class="container">
+    <div class="container aling text">
+      <div>
+        <img class="key__img key" src="assets/mochila.png">
+      </div>
+      <div class="talk">
+        <div>
+          <p class="text">keys</p>
+        </div>
+        <div class="inventory">
+           <span id="items">vazio</span>
+        </div>
+      </div>
+      <button class="button"><a href="#key">sair</a></button>
+    </div>
+  </div>
+
   <script>
     let Day, Hours, Minutes, Second
     let target_date = new Date("december 25, 2020").getTime()
@@ -142,7 +175,10 @@
         alert("Essa chave não existe!")
       }
     }
+
   </script>
-  <script src="js/counter.js"></script>
+  <script type="module" src="js/counter.js"></script>
+  <script src="js/menu.js"></script>
+  <script type="module" src="js/bag.js"></script>
 </body>
 </html>
