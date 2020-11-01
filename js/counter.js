@@ -1,3 +1,5 @@
+import bag from "./bag.js"
+
 let talk = ['olá Docinho...', 'Tudo bem com voce?', 'você viu meu gatinho?', 'se você o encontrar, lhe dou uma chave!!!', 'encontrou?' ]
 let talk_2 = ['', 'neko é você?', 'por onde você andou?', 'Obrigado!!!', 'aqui está sua chave que prometi...', '[voce recebeu a chave "gato"]']
 var button = document.getElementById("bruxa_talk"),
@@ -23,8 +25,13 @@ button.onclick = function() {
             document.getElementById("bruxa").innerHTML = talk_2[5]
             document.getElementById("neko").style.display = "none"
             document.getElementById("key_witch").style.display = "none"
+            bag("gato")
+            document.getElementById("bruxa_talk").style.display = "none"
+            // if(slot.indexOf("gato", 0)) {
+            // }
             // document.getElementById("neko").classList.add("key__neko")
         }
     }
 }
+
 
